@@ -1,33 +1,123 @@
-.App {
-  text-align: center;
+
+.navbar{
+  opacity: .8;
+  background: #4863A0;
+}
+.main-img{
+  border-radius: 50%;
+  height:13rem;
+  width: 13rem;
+}
+.name{
+  font-family: 'Cabin', sans-serif;
+  font-size: 5rem;
+  color: aliceblue;
+}
+.first-name{
+color: aliceblue;
+}
+.last-name{
+color: #BDB76B;
+}
+.title-job{
+  color:aliceblue;
+  font-size: 1.5rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+.home-main{
+  background:linear-gradient(rgba(0,184,255,0.45),rgba(0,184,255,0.45)),url('./components/img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  overflow: auto;
+  margin:0;
+  padding:0;
+  height:100vh;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+}
+.img-about{
+ height:14rem;
+ width: 14rem;
+ box-shadow: 1rem 1rem 0.5rem rgba(0,184,255,0.45);
+}
+.hr-title{
+  border-top: '3px solid #833fb2';
+  width: '50%'
+}
+.font-title{
+  font-family: 'Cute Font', cursive;
+  color: #4863A0;
+  font-size: 3rem;
+}
+.font-skills{
+  font-family: 'Cute Font', cursive;
+  color: #e22947;
+  font-size: 3rem;
+
+}
+.social-links{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
+.social-links li{
+  list-style: none;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.social-links li a{
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  margin: 0 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 3;
+}
+.li-social-links  a .fab{
+  position: relative;
+  color:#262626;
+  transition: .3s;
+  z-index: 3;
+  text-align: center;
+  top:15%;
+}
+.li-social-links  a:hover .fab{
+  cursor: pointer;
+  transform: rotateX(360deg);
+}
+.social-links li a::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 100%;
+  height:100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+.social-links li a:hover::before{
+  top:0;
+}
+.social-links li:nth-child(1) a::before{
+background: #3b5999;
+}
+.social-links li:nth-child(2) a::before{
+background: #0077b5;
+}
+.social-links li:nth-child(3) a::before{
+background: #3f729b;
+}
+.email-title{
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+.skills-font{
+  color: aliceblue;
 }
